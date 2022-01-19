@@ -38,6 +38,13 @@ import javafx.scene.text.*;
                             hub.getChildren().add(new Text(String.format(" X%d = ",j)));
                             hub.getChildren().add(tx);
                         }
+                        if(xcount<4){
+                            Vbucks.setPrefWidth(750);
+                            Vbucks.setPadding(new Insets(0,-60,0,275));
+                        }else if(xcount<6){
+                            Vbucks.setPrefWidth(900);
+                            Vbucks.setPadding(new Insets(0,-60,0,150));
+                        }
                         TextField tx=new TextField();
                         tx.setStyle("-fx-background-color:  #3a6d7a;-fx-background-radius: 20;");
                         tx.setPrefWidth(120);
